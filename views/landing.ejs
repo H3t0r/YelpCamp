@@ -1,3 +1,50 @@
-<% include partials/header %>
-<h2>Landing</h2>
-<% include partials/footer %>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YelpCamp</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="/css/landing.css">
+</head>
+<body class="is-loading" onload="loading()">
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<span class="icon fa-code"></span>
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>YelpCamp</h1>
+					<p>Welcome to YelpCamp, a unique site where you can share and rate Campgrounds around the world.</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="/campgrounds">View All Campgrounds</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+	</div>
+	<ul class="slideshow">
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+	<script>
+		function loading() {
+			window.setTimeout(function () {
+				document.querySelector('body').classList.remove('is-loading');
+			}, 100);
+		}
+	</script>
+</body>
+</html>

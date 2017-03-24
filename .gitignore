@@ -1,4 +1,5 @@
 .DS_Store
+dimension
 node_modules
 .tmp
 npm-debug.log
